@@ -7,6 +7,9 @@
 4) head -10 cust.txt | tail -10 cust.txt > cust2.txt
 ```
 ## 2)Create a file namely samplefile.txt using vi editor
+```
+vi samplefile.txt
+```
 a. Type/copy 10 lines of some content
 Note: Use shift in key with copy and paste
 ```
