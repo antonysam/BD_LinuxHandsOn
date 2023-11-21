@@ -63,9 +63,27 @@ wc -l custmerged.txt >> custmerged.txt
 ## 5. Add a header as custno,firstname,lastname,age,profession in the first line of the custmerged.txt using command without using vi editor
 #(Hint: Think of using tempfiles, first create a temp file with header, then add data, then move tempfile to final filename)
 ```
+vi tempfile1.csv
+
+provide headers - custno,firstname,lastname,age,profession with data into the tempfile1.csv
+
+mv tempfile1.csv custmerged.txt
 ```
 
 ## 6. Find for the number of occurances of the word Pilot
 ```
+grep Pilot custmerged.txt
+```
+
+## 7. Find for Pilot and replace with Aircraft Pilot in the custmerged.txt (use the commmand sed -i 's/Pilot/AircraftPilot/g' custmerged.txt)
+```
+sed 's/Pilot/AircraftPilot/' custmerged.txt
+```
+
+## 8. Count the number of words and lines in the custmerged.txt
+```
+wc -l custmerged.txt
+
+wc -w custmerged.txt
 ```
 
