@@ -51,3 +51,23 @@ esc
 dw
 :q!
 ```
+## 3. Merge the cust1.txt and cust2.txt in the name of custmerged.txt with cust2.txt contents first and cust1.txt
+content next
+```
+cust2.txt > custmerged.txt
+cust1.txt >> custmerged.txt
+```
+## 4. Count the number of lines in custmerged.txt and add the count in the last line of the custmerged.txt using
+command without using vi editor
+```
+wc -l custmerged.txt >> custmerged.txt
+```
+## 5. Add a header as custno,firstname,lastname,age,profession in the first line of the custmerged.txt using
+command without using vi editor
+#(Hint: Think of using tempfiles, first create a temp file with header, then add data, then move tempfile to final
+filename)
+```
+```
+
+## 
+
