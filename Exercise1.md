@@ -87,3 +87,11 @@ wc -l custmerged.txt
 wc -w custmerged.txt
 ```
 
+## 9. List and display only the last file created. List and display only the last but one file created in the current
+folder.
+```
+ls -lrt | tail -n 1
+
+cd dir1
+[hduser@localhost dir1]$ ls -lrt | tail -n 1
+```
