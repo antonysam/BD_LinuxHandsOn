@@ -87,8 +87,7 @@ wc -l custmerged.txt
 wc -w custmerged.txt
 ```
 
-## 9. List and display only the last file created. List and display only the last but one file created in the current
-folder.
+## 9. List and display only the last file created. List and display only the last but one file created in the current folder.
 ```
 ls -lrt | tail -n 1
 
