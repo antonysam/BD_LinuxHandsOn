@@ -94,3 +94,19 @@ ls -lrt | tail -n 1
 cd dir1
 [hduser@localhost dir1]$ ls -lrt | tail -n 1
 ```
+## 10. Copy the custmerged.txt in the name of custmeredcopied.txt retaining the timestamp of the original file in the copied file.
+```
+cp -p custmerged.txt custmergedcopied.txt
+```
+## 11. Goto /tmp directory, staying in /tmp , create directories inside /home/hduser path as src/custdata using placeholder ~ , then goto ##/home/hduser/src/custdata,then goto /home path using absolute path method, come back to /home/hduser/src/custdata using the respective placeholder, go to 2 ## levels higher using the respective placeholder
+```
+cd temp
+ls /home/hduser
+mkdir -p ~/src/custdata
+cd /home/hduser/src/custdata
+cd /home
+cd ~/src/custdata
+
+
+
+
