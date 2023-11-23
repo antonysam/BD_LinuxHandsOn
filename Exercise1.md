@@ -106,6 +106,16 @@ mkdir -p ~/src/custdata
 cd /home/hduser/src/custdata
 cd /home
 cd ~/src/custdata
+cd ~
+cd /
+```
+## 12. Copy the custmerged.txt inside the /home/hduser/src/custdata and rename the directory custdata as customerdata
+```
+cp custmerged.txt ~/src/custdata/
+cd src
+mv custdata customerdata
+```
+
 
 
 
