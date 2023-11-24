@@ -115,6 +115,31 @@ cp custmerged.txt ~/src/custdata/
 cd src
 mv custdata customerdata
 ```
+## 13. Move & rename the /home/hduser/src/customerdata into the directory /tmp/custdata/process
+```
+mkdir -p /tmp/custdata/process
+mv  /home/hduser/src/customerdata /tmp/custdata/process
+```
+## 14. Create a zerobyte file namely success inside /tmp/custdata/process
+```
+touch /tmp/custdata/process/success
+```
+## 15. Create a dir called /tmp/custdata/archive
+```
+mkdir /tmp/custdata/archive
+```
+## 16. compress using gzip compression the /tmp/custdata/process/custmerged.txt file and move into /tmp/custdata/archive
+```
+gzip /tmp/custdata/process/custmerged.txt
+mv /tmp/custdata/process/custmerged.txt.gz /tmp/custdata/archive
+```
+## 16.B Remove the /tmp/custdata/process directory.
+```
+rm -rf /tmp/custdata/process
+```
+
+
+    
 
 
 
