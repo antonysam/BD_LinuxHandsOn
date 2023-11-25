@@ -137,6 +137,30 @@ mv /tmp/custdata/process/custmerged.txt.gz /tmp/custdata/archive
 ```
 rm -rf /tmp/custdata/process
 ```
+## 17. Create a user in your name, set password as hduser, switch user to the user created, create a file inside /tmp directory in your name logged in your name.
+```
+sudo useradd SamDany
+sudo passwd SamDany
+> /tmp/SamDany.txt
+```
+## 18. Remove write access for user using octal number and naming methods using chmod, try writing the file using vi editor
+```
+chmod 077 /tmp/SamDany.txt
+vi /tmp/SamDany.txt
+```
+## 19. Repeate the step 18 for other user also, you can use hduser as others here.
+```
+chmod 070 /tmp/SamDany.txt
+vi /tmp/SamDany.txt
+```
+## 20. Create a local variable called welcomemessage="Welcome aspirants", convert it into environmental variable, check whether it is added in the env variable.
+```
+welcomemessage="Welcome aspirants"
+echo $welcomemessage
+export welcomemessage
+echo welcomemessage
+```
+
 
 
     
