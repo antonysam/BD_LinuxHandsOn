@@ -160,6 +160,19 @@ echo $welcomemessage
 export welcomemessage
 echo welcomemessage
 ```
+## 21. Add the env variable into .bashrc profile and ensure the env variable is set every time.
+```
+sudo nano .bashrc
+scroll down to the end of the file
+add the below varaible
+export welcomemessage="Welcome aspirants"
+
+open a new terminal and 
+printenv | grep welcomemessage
+
+
+```
+
 
 
 
